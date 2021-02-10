@@ -34,17 +34,10 @@ interface StateProps {
   shares: number;
   unitPrice: number;
 }
-
 interface ResultProps {
   results: string;
 }
 
-interface EngineParam {
-  message: string;
-}
-interface EventProps {
-  params: EngineParam;
-}
 const App: React.FC = () => {
   const [state, setState] = useState<StateProps>({ shares: 0, unitPrice: 0 });
   const [results, setResults] = React.useState<ResultProps>();
